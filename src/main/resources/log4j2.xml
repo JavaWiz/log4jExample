@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="5" status="debug" strict="true" packages="com.javawiz.log4jExample">
+     <Appenders>
+	<RollingFile name="myapp" filename="C:/logs/myapp.log"  filePattern="C:/logs/$${date:yyyy-MM-dd}/myapp-%d{yyyy-MM-dd}-%i.log.gz">
+	<PatternLayout pattern="[%t] [%c] (%F:%L)  – %m%n" />
+	<Policies>
+		<TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+	</Policies>
+	</RollingFile>
+	</Appenders>
+</Configuration>
