@@ -8,8 +8,8 @@ public class HelloExample{
 	public static void main(String[] args) {
 
 		HelloExample obj = new HelloExample();
-		obj.runMe("mkyong");
-		String creditCardNum = "123456781234111112";
+		obj.runMe("log4j");
+		String creditCardNum = "1234567812341111";
     	logger.info("Credit Card : " + creditCardNum);
 
 	}

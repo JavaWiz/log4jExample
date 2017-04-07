@@ -9,7 +9,7 @@ import org.apache.log4j.spi.LoggingEvent;
 
 public class CardNumberFilteringLayout extends PatternLayout {
     private static final String MASK = "$1-XXXX-XXXX-$2";
-    private static final Pattern PATTERN = Pattern.compile("\\b([0-9]{4})[0-9]{0,9}([0-9]{4})\\b");
+    private static final Pattern PATTERN = Pattern.compile("\\b([0-9]{4})[0-9]{0,8}([0-9]{4})\\b");
 
     @Override
     public String format(LoggingEvent event) {
